@@ -39,7 +39,7 @@ function validateForm() {
   }
 
   if(!emailFormat.test(email)){
-    errorMsg += "*Required: Please enter valid email. Eg. xxx@xxx.xxx\n";
+    errorMsg += "Required: Please enter valid email. Eg. xxx@xxx.xxx\n";
   }
 
   if(phone.length > 1)
@@ -47,7 +47,7 @@ function validateForm() {
     if(!phoneDashFormat.test(phone)){
     //passedPrev = true;
     if(!phoneRegularFormat.test(phone)){
-      errorMsg += "*Required: Please enter valid Phone. Eg. xxx-xxx-xxxx or xxxxxxxx\n";
+      errorMsg += "Required: Please enter valid Phone. Eg. xxx-xxx-xxxx or xxxxxxxx\n";
     }
   }
 }

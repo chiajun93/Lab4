@@ -1,0 +1,28 @@
+<html>
+  <head>
+
+  	<title>
+      HTML5 Canvas
+    </title>
+
+   </head>
+
+   <p>
+        <input type="button" id="start" name="start" value="Start" onclick="validateForm();" />
+        <input type="button" id="left" name="left" value="Turn Left" onclick="validateForm();" />
+        <input type="button" id="right" name="right" value="Turn Right" onclick="validateForm();" />
+   </p>
+
+   <canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.moveTo(0,400);
+ctx.lineTo(400,400);
+ctx.stroke();
+</script>
+
+</html>
